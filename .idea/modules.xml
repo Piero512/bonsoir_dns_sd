@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bonsoir_dns_sd.iml" filepath="$PROJECT_DIR$/bonsoir_dns_sd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bonsoir_dns_sd2.iml" filepath="$PROJECT_DIR$/.idea/bonsoir_dns_sd2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/bonsoir_dns_sd_android.iml" filepath="$PROJECT_DIR$/android/bonsoir_dns_sd_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/bonsoir_dns_sd_example_android.iml" filepath="$PROJECT_DIR$/example/android/bonsoir_dns_sd_example_android.iml" />
+    </modules>
+  </component>
+</project>
