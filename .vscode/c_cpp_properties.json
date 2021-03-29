@@ -5,7 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "example/windows/flutter/ephemeral",
-                "windows/include"
+                "windows/include",
+                "${workspaceFolder}/example/windows/flutter/ephemeral/cpp_client_wrapper/include",
+                "C:/Program Files/Bonjour SDK/Include"
             ],
             "defines": [
                 "_DEBUG",
