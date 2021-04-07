@@ -8,6 +8,7 @@ set(PLUGIN_NAME "bonsoir_dns_sd_plugin")
 
 add_library(${PLUGIN_NAME} SHARED
   "bonsoir_dns_sd_plugin.cpp"
+  "plugin.cpp"
   "service/service.cpp"
   "utils.cpp"
   "actions/action.cpp"
@@ -29,7 +30,7 @@ target_compile_definitions(${PLUGIN_NAME} PRIVATE FLUTTER_PLUGIN_IMPL)
 target_include_directories(${PLUGIN_NAME} INTERFACE
   "${CMAKE_CURRENT_SOURCE_DIR}/include" )
 target_include_directories(${PLUGIN_NAME} PUBLIC ${BONJOUR_INCLUDE_DIR})
-target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin ${BONJOUR_LIBRARIES})
+target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin ws2_32 ${BONJOUR_LIBRARIES} )
 
 # List of absolute paths to libraries that should be bundled with the plugin
 set(bonsoir_dns_sd_bundled_libraries

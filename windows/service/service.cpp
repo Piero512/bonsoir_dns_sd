@@ -8,7 +8,7 @@ BonsoirService::BonsoirService(const flutter::EncodableMap &values_map)
 {
         name = extractValueOrDefault<std::string>(values_map, "service.name", "");
         type = extractValueOrDefault<std::string>(values_map, "service.type", "");
-        port = extractValueOrDefault<int64_t>(values_map, "port",-1);
+        port = extractIntValueOrDefault(values_map, "port");
         auto attr_iterator = values_map.find(flutter::EncodableValue("service.attributes"));
         if (attr_iterator != values_map.end())
         {
